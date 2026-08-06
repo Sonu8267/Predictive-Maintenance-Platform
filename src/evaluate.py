@@ -1,0 +1,5 @@
+from sklearn.metrics import mean_squared_error
+
+def evaluate(model, X_test, y_test):
+    predictions = model.predict(X_test)
+    return mean_squared_error(y_test, predictions)
